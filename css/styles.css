@@ -1,6 +1,17 @@
+#outputPalindrome {
+  display: block;
+}
+
+#outputPalindrome {
+  display: none;
+}
+
 #factorialOutput {
   display: none;
 }
+
+
+
 
 /*.btn {
   margin-bottom: 20px;

@@ -11,8 +11,17 @@
   <body>
     <div class="container">
       <div>
-        <h1>Palindromes</h1>
-        <p>This is for the Palindromes lesson in Looping with for.</p>
+        <h1>Palindromes: This is for the Palindromes lesson in Looping with for.</h1>
+      </div>
+      <div id="inputPalindrome">
+        <form id="palindromeForm">
+          <label for="palindromeInput">Try out your palindrome!</label>
+          <input id="palindromeInput" type="text">
+          <button type="submit" class="btn" id="palindromeButton">Submit</button>
+        </form>
+      </div>
+      <div id="outputPalindrome">
+        <p>This is <span class="notPalindrome"></span>a palindrome.</p>
       </div>
     </div>
   </body>
