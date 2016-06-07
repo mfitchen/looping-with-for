@@ -1,0 +1,7 @@
+#puzzle-output, #puzzle-guess {
+  display: none;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
