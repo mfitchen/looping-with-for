@@ -3,7 +3,8 @@
 
 //Prime Sifting
 
-$(document).ready(function(event) {
+$(document).ready(function() {
+  $("button#button-prime").click(function(event) {
   $("ul#list-o-primes li").remove();
 
   var primeInput = parseInt($("input#input-prime").val());
@@ -28,11 +29,11 @@ $(document).ready(function(event) {
     };
   });
   event.preventDefault();
-});
+
 
 
 // Palindromes
-$(document).ready(function() {
+
   $("button#palindromeButton").click(function(event) {
     var palindromeString = $("input#palindromeInput").val();
     var palindromeString = palindromeString.toUpperCase();
@@ -65,12 +66,12 @@ $(document).ready(function() {
     $("#outputPalindrome").toggle();
     event.preventDefault();
   });
-});
+
 
 
 
 // Factorial
-$(document).ready(function() {
+
   $("button#factorialButton").click(function(event) {
     var factorialInput = $("input#factorialInput").val();
     var factorialParse = parseInt(factorialInput);
@@ -87,4 +88,5 @@ $(document).ready(function() {
     $(".factorial").text(factorialTotal);
     $("#factorialOutput").show();
   });
+
 });

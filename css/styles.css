@@ -15,6 +15,10 @@
 }
 
 #output-primes {
+  display: block;
+}
+
+#output-primes {
   display: none;
 }
 
