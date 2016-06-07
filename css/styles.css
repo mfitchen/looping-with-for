@@ -1,7 +1,7 @@
-#puzzle-output, #puzzle-guess {
+#factorialOutput {
   display: none;
 }
 
-.btn {
+/*.btn {
   margin-bottom: 20px;
-}
+}*/
