@@ -1,6 +1,36 @@
 // Business (or back-end) logic:
 // Everything below this line is user interface (or front-end) logic:
 
+//Prime Sifting
+
+$(document).ready(function(event) {
+  $("ul#list-o-primes li").remove();
+
+  var primeInput = parseInt($("input#input-prime").val());
+  var primeList = [];
+
+  for (var index = 2; index <= primeInput; index += 1) {
+    primeList.push(index);
+  };
+
+  for (var prime = 2; prime <= primeInput / 2; prime += 1) {
+    for (var index = 2 * prime; index <= primeInput; index += prime) {
+      primeList[index-2] = "-";
+    };
+  };
+
+  $("#div-prime").toggle();
+  $("#output-primes").toggle();
+
+  primeList.forEach(function(potentialPrime) {
+    if (potentialPrime != "-") {
+      $("#list-o-primes").append("<li>" + potentialPrime + "</li>");
+    };
+  });
+  event.preventDefault();
+});
+
+
 // Palindromes
 $(document).ready(function() {
   $("button#palindromeButton").click(function(event) {

@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Prime Shifting</title>
+    <title>Prime Sifting</title>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -11,8 +11,19 @@
   <body>
     <div class="container">
       <div>
-        <h1>Prime Shifting</h1>
-        <p>This is for the Prime Shifting lesson in Looping with for.</p>
+        <h1>Prime Sifting</h1>
+        <p>A prime number is a whole number greater than 1, whose only two whole-number factors are 1 and itself. The first few prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, and 29.</p>
+      </div>
+      <div id="div-prime">
+        <form id="form-prime">
+          <label for="input-prime">Give us a number greater than 2!</label>
+          <input id="input-prime" type="text">
+          <button type="submit" class="btn" id="button-prime">Submit your number</button>
+        </form>
+      </div>
+      <div id="output-primes">
+        <ul id="list-o-primes">
+        </ul>
       </div>
     </div>
   </body>

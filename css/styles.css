@@ -10,6 +10,13 @@
   display: none;
 }
 
+#div-prime {
+  display: block;
+}
+
+#output-primes {
+  display: none;
+}
 
 
 
